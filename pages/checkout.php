@@ -31,12 +31,12 @@ try {
     $mail->isSMTP();
     $mail->Host = 'www.gmail.com'; // e.g., smtp.gmail.com
     $mail->SMTPAuth = true;
-    $mail->Username = 'writerspowerful@gmail.com'; // Replace
+    $mail->Username = 'jarsokush@gmail.com'; // Replace
     $mail->Password = 'Pluto10##';           // Replace
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
-    $mail->setFrom('writerspowerful@gmail.com', 'E-commerce Shop');
+    $mail->setFrom('jarsokush@gmail.com', 'E-commerce Shop');
     $mail->addAddress($userEmail);
     $mail->Subject = 'Order Confirmation';
     $mail->Body = "Thank you for your order!\n\nItems: $itemStr\nTotal: $$total";
